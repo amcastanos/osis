@@ -1,0 +1,17 @@
+.background {
+    background-color: #57737f; 
+}
+
+.text-white {
+    color: white;
+}
+
+.text-white a {
+    color: white !important;
+}
+
+.text-white a:hover {
+    color: black !important;
+}
+
+

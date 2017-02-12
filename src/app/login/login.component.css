@@ -1,0 +1,8 @@
+.custom-panel {
+	background-color: #AEE7FF;
+	color:blue !important;
+	padding: 30px;
+	border-radius: .5em;
+	box-shadow: -10px 10px 5px #888888;
+	min-height: 200px;
+}

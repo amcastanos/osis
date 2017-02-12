@@ -1,0 +1,26 @@
+<div class="container">
+     
+  <div class="ui-widget-header" style="padding:4px 10px;border-bottom: 0 none">
+    <i class="fa fa-search" style="margin:4px 4px 0 0"></i>
+    <input #gb type="text" pInputText size="50" placeholder="Busqueda">
+  </div>                                                                                   
+  <div class="table-responsive">          
+   <p-datatable class="table table-bordered" 
+      [value]="areas"
+      [row]="20" 
+      [paginator]="true"
+      [globalFilter]="gb">
+      <p-header>Listado de Materias</p-header>       
+      <p-column field="name" header="Nombre"></p-column>
+      <p-column field="teacher" header="Profesor"></p-column>
+      <p-column field="group" header="Grupo"></p-column>
+      <p-column field="hour" header="horas"></p-column>
+      <p-column field="notes" header="Notas"></p-column>
+      <p-column styleClass="col-button">          
+          <template let-car="rowData" pTemplate="body">
+              <button type="button" pButton icon="glyphicon glyphicon-pencil"></button>
+          </template>
+      </p-column>  
+  </p-datatable>
+  </div>
+</div>
